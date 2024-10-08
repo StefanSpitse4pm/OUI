@@ -21,7 +21,13 @@
     box-sizing:content-box;
     
 }
-.loginPageBody
+
+body
+{
+    margin: 0;
+}
+
+main
 {
     margin: 0;
     background-color: var(--yellow);
@@ -52,7 +58,18 @@ hr
     color: var(--yellow);
 }
 
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+form > input
+{
+    max-width: 300px;
+}
 
 
 
