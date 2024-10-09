@@ -11,16 +11,24 @@
         <div class="loginContent">
             <h1>Inloggen</h1>
             <hr>
-            <form action="" method="POST">
-                <label for="username">Gebruikersnaam:</label>
-                <input type="text" name="username" id="">
-                <label for="email">Emailadres:</label>
-                <input type="email" name="email" id="">
-                <label for="password">Wachtwoord:</label>
-                <input type="password" name="password" id="">
-                <label for="repeatPassword">Herhaal Wachtwoord:</label>
-                <input type="password" name="repeatPassword" id="">
-            </form>
+            <div class="loginForm">
+                <form action="loginPage.html" method="POST">
+                    <label for="username">Gebruikersnaam</label>
+                    <input type="text" name="username" id="username">
+                    <label for="email">Emailadres</label>
+                    <input type="email" name="email" id="email">
+                    <label for="password">Wachtwoord    </label>
+                    <input type="password" name="password" id="password">
+                    <div class="checkboxbox">
+                        <input type="checkbox" name="TOS" id="TOS">
+                        <label for="TOS">Ik ga akkoord met de <a href="">algemene voorwaarden</a></label>
+                    </div>
+                    <div class="checkboxbox">
+                        <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief">
+                        <label for="nieuwsbrief">Ja, ik wil me inschrijven voor updates en het laatste nieuws van Café OUI!</label>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 </body>
