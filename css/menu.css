@@ -26,6 +26,8 @@
     margin: 0;
 }
 
+
+/*Linker blok*/
 .koffieDrankenUp
 {
     grid-column: 2/3;
@@ -36,6 +38,16 @@
     color: var(--yellow);
 }
 
+.koffieContentUp
+{
+    grid-column: 2/3;
+    grid-row: 2/3; 
+    font-family: "Circular";
+    color: var(--yellow);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .koffieDrankenDown
 {
     grid-column: 2/3;
@@ -44,10 +56,22 @@
     grid-row: 4/5;
     font-family: "Circular";
     color: var(--yellow);
+    text-align:left;
 }
 
+.koffieContentDown
+{
+    grid-column: 2/3;
+    grid-row: 4/5; 
+    font-family: "Circular";
+    color: var(--yellow);
+    font-size: 2rem;
+    text-align: center;
+}
+/*End Linker blok*/
 
 
+/*Rechter blok*/
 .gebakSnoepUp
 {
     grid-column: 4/5;
@@ -68,13 +92,20 @@
     color: var(--yellow);
 }
 
-.menuBalkUnder
+.gebakContentUp
 {
-    background-color: var(--blue);
-    grid-row: 6/7;
-    grid-column: 1/6;
-    font-family: "Circular";   
+    grid-column: 4/5;
+    grid-row: 2/3; 
+    font-family: "Circular";
+    color: var(--yellow);
+    font-size: 2.5rem;
+    text-align: center;
 }
+/*End Rechter blok*/
+
+
+
+
 
 .backgroundMenu
 {
@@ -96,22 +127,3 @@ hr
 {
     color: var(--red);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* yellow - #EDE5BB
-green blue - #00657C
-dark red - #95261F */
