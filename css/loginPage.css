@@ -152,7 +152,7 @@ form > * {
     margin-block: 5px;
 }
 
-/* Responsiviteit */
+
 @media (max-width: 500px) {
     .loginContent {
         padding: 20px;
