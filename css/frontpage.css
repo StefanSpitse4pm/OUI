@@ -1,0 +1,42 @@
+:root
+{
+    --yellow: #EDE5BB;
+    --blue: #00657C;
+    --red: #95261F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header
+{
+    height: 100vh;
+    background-color: var(--yellow);
+}
+
+.oui_koffie
+{
+    width: 50px;
+    height: 50px;
+}
+
+.oui_logo
+{
+    width: 50px;
+    height: 50px;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    color: var(--blue);
+    font-size: 1rem;
+}
