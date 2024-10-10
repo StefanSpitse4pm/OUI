@@ -1,3 +1,17 @@
+<?php 
+    require '../functies/loginfunction.php';
+
+    
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        $username = filter_input(INPUT_POST, "username");
+        $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+        $password = filter_input(INPUT_POST, "password");
+    }
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +30,7 @@
                 <h1>Inloggen</h1>
                 <hr>
                 <div class="loginform">
-                    <form action="loginPage.html" method="POST">
+                    <form action="loginfunction.php" method="POST">
                         <label for="username">Gebruikersnaam</label>
                         <input type="text" name="username" id="username">
                         <label for="email">Emailadres</label>
@@ -31,6 +45,7 @@
                             <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief">
                             <label for="nieuwsbrief">Ja, ik wil me inschrijven voor updates en het laatste nieuws van Café OUI!</label>
                         </div>
+                        <input type="submit" value="Verzenden">
                     </form>
                 </div>
             </div>
