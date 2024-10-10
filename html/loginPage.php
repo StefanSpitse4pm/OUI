@@ -27,7 +27,7 @@
                 <img src="../Img/loginPage-foto.png" alt="coffee-drinking-image">
             </div>
             <div class="login">
-                <h1>Inloggen</h1>
+                <img src="../Img/Logo-04.png" alt="">
                 <hr>
                 <div class="loginform">
                     <form action="loginfunction.php" method="POST">
@@ -45,7 +45,7 @@
                             <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief">
                             <label for="nieuwsbrief">Ja, ik wil me inschrijven voor updates en het laatste nieuws van Café OUI!</label>
                         </div>
-                        <input type="submit" value="Verzenden">
+                        <input type="submit" value="Inloggen">
                     </form>
                 </div>
             </div>
