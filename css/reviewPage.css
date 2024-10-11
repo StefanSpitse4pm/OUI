@@ -1,3 +1,15 @@
+@font-face 
+{
+    font-family: 'Caveat-Regular';
+    src: url('../fonts/caveat.regular.ttf');
+}
+
+@font-face 
+{
+    font-family: 'CircularStd-Book';
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
 /* Algemene stijlen voor de review sectie */
 .reviews-section 
 {
@@ -15,13 +27,30 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px hsl(0, 0%, 0%);
     padding: 20px;
-    font-family: 'Young Serif', serif;
+    font-family: 'Caveat-Regular';
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+/* Stijl voor header text van review */
+.review-card > .review-header
+{
+    display: flex; /* Flexbox inschakelen */
+    justify-content: space-between; /* Ruimte tussen de header tekst en rating */
+    align-items: center;
+    font-size: 25px;
+    margin-top: -35px;
+    padding-top: 0;
+}
+
+/* Font voor text van Review kaarten */
+.review-card > .review-text
+{
+    font-family: 'CircularStd-Book';
 }
 
 .review-card:hover
 {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px hsl(0, 0%, 0%, 0.15);
 }
