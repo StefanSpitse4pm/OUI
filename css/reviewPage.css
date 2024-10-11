@@ -10,6 +10,10 @@
     src: url('../fonts/CircularStd-Book.otf');
 }
 
+body {
+    background-color: hsl(39, 62%, 88%);
+}
+
 /* Algemene stijlen voor de review sectie */
 .reviews-section 
 {
@@ -41,6 +45,11 @@
     font-size: 25px;
     margin-top: -35px;
     padding-top: 0;
+}
+
+.review-card > hr
+{
+    margin: -10px 0;
 }
 
 /* Font voor text van Review kaarten */
