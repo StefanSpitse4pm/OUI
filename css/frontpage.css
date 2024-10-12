@@ -12,8 +12,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+    font-family: "Circular";
+    src: url(../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url(../fonts/caveat.regular.ttf);
+}
+
 header
 {
+    width: auto;
     height: 100vh;
     background-color: var(--yellow);
 }
@@ -30,13 +41,115 @@ header
     height: 50px;
 }
 
+.login-logo
+{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.homepage_foto
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ul
+{
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
 li
 {
     list-style: none;
+    max-height: 100%;
 }
 
 a
 {
+    text-decoration: none;
     color: var(--blue);
     font-size: 1rem;
+}
+
+a:hover
+{
+    color: var(--red);
+}
+
+.navbar
+{
+    width: 100%;
+    height: 60px;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.link
+{
+    display: flex;
+    gap: 2rem;
+}
+
+hr
+{
+    padding: 2px;
+    background-color: var(--blue);
+}
+
+.homepage
+{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.homepage_foto
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.homepage_text
+{
+    position: absolute;
+    width: 550px;
+    height: auto;
+    background-color: var(--yellow);
+    color: black;
+    color: var(--yellow);
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    top: 150px;
+    left: 100px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.titel
+{
+    color: black;
+    font-size: 30px;
+    font-family: "Circular", "Caveat", sans-serif;
+    margin: 20px;
+}
+
+.al1
+{
+    color: black;
+    font-size: 18px;
+    font-family: "Circular", "Caveat", sans-serif;
+    margin-bottom: 20px;
 }
