@@ -1,14 +1,31 @@
 <?php 
     require '../functies/validation.php';
 
+    session_start();
     
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = filter_input(INPUT_POST, "username");
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
         $password = filter_input(INPUT_POST, "password");
         $passwordRepeat = filter_input(INPUT_POST, "passwordRepeat");
+        $tos = filter_input(INPUT_POST, "TOS", FILTER_VALIDATE_BOOL);
+    
+        
+        
         $error = passwordValidation($password, $passwordRepeat);
+        if (empty($error) && !empty($tos)) 
+        {
+            $_SESSION['username'] = $username;  
+            $_SESSION['email'] = $email;
+            header("Location: Frontpage.html");
+            exit();
+        }
+        else {
+        $error  = "Terms of service is required.";
+        }
+        
     }
+}
     
 
 ?>
@@ -35,13 +52,13 @@
                         <label for="username">Gebruikersnaam</label>
                         <input type="text" name="username" id="username">
                         <label for="email">Emailadres</label>
-                        <input type="email" name="email" id="email">
+                        <input type="text   " name="email" id="email">
                         <label for="password">Wachtwoord</label>
                         <input type="password" name="password" id="password">
                         <label for="passwordRepeat">Herhaal Wachtwoord</label>
-                        <input type="passwordRepeat" name="passwordRepeat" id="passwordRepeat">
+                        <input type="password" name="passwordRepeat" id="passwordRepeat">
                         <div class="checkboxbox">
-                            <input type="checkbox" name="TOS" id="TOS">
+                            <input type="checkbox" value='true' name="TOS" id="TOS">
                             <label for="TOS">Ik ga akkoord met de <a href="">algemene voorwaarden</a></label>
                         </div>
                         <div class="checkboxbox">
