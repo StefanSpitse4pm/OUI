@@ -26,6 +26,11 @@
     margin: 0;
 }
 
+.bigger
+{
+    font-size: 20px;
+}
+
 
 /*Linker blok*/
 .koffieDrankenUp
@@ -38,14 +43,14 @@
     color: var(--yellow);
 }
 
-.koffieContentUp
+.koffieContentUp /*Tekst*/
 {
     grid-column: 2/3;
     grid-row: 2/3; 
     font-family: "Circular";
     color: var(--yellow);
     font-size: 2.5rem;
-    text-align: center;
+    text-align:center;
 }
 
 .koffieDrankenDown
@@ -54,20 +59,25 @@
     background-color: var(--red);
     border-radius: 30px;
     grid-row: 4/5;
-    font-family: "Circular";
-    color: var(--yellow);
-    text-align:left;
+    padding: 0px 20px;
+    padding-top: 10px;
 }
 
-.koffieContentDown
+.extrasContent
+{
+    padding-top: 40px;
+}
+
+.koffieContentDown /*Tekst*/
 {
     grid-column: 2/3;
     grid-row: 4/5; 
     font-family: "Circular";
     color: var(--yellow);
-    font-size: 2rem;
-    text-align: center;
+    font-size: 15px;
 }
+
+
 /*End Linker blok*/
 
 
@@ -90,9 +100,11 @@
     grid-row: 4/5; 
     font-family: "Circular";
     color: var(--yellow);
+    padding: 0px 20px;
+    padding-top: 10px;
 }
 
-.gebakContentUp
+.gebakContentUp /*Tekst*/
 {
     grid-column: 4/5;
     grid-row: 2/3; 
@@ -100,6 +112,15 @@
     color: var(--yellow);
     font-size: 2.5rem;
     text-align: center;
+}
+
+.gebakContentDown /*Tekst*/
+{
+    grid-column: 4/5;
+    grid-row: 4/5; 
+    font-family: "Circular";
+    color: var(--yellow);
+    font-size: 15px;
 }
 /*End Rechter blok*/
 
@@ -109,12 +130,12 @@
 
 .backgroundMenu
 {
-    grid-template-columns: 2fr 4fr 0.5fr 4fr 2fr;
-    grid-template-rows: 1fr 1fr 0.25fr 6fr 0.25fr 0.125fr 0.5fr;
+    grid-template-columns: 2fr 4fr 0.75fr 4fr 2fr;
+    grid-template-rows: 1fr 1fr 0.125fr 5fr 0.25fr 0.125fr 0.5fr;
     display: grid;
     background-color: var(--yellow);
     min-height: 100vh;
-    padding: 0, 0;
+    padding: 0px 0px;
 }
 
 h1
