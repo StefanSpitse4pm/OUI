@@ -6,7 +6,7 @@ function passwordValidation($password, $repeatPassword, $minlength = 8):mixed {
     if (!empty($password) && !empty($repeatPassword)) 
     {
         if ($password === $repeatPassword) {
-            if (strlen($password) < 8) {
+            if (strlen($password) > 8) {
                 if (preg_match($pattern, $password))
                 {
                     return null;
@@ -25,7 +25,7 @@ function passwordValidation($password, $repeatPassword, $minlength = 8):mixed {
                 }
             } else 
             {
-                return "<h2>Password must be longer then </h2>";   
+                return "<h2>Password must be longer then $minlength charachters.</h2>";   
             }
         }
         else {
