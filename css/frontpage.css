@@ -5,8 +5,9 @@
     --red: #95261F;
 }
 
-*{
+body{
     margin: 0;
+    width: 100%;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -24,41 +25,72 @@
 
 header
 {
-    width: auto;
-    height: 100vh;
-    background-color: var(--yellow);
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .oui_koffie
 {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .oui_logo
 {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 19px;
+    left: 85px;
 }
 
 .login-logo
 {
     width: 40px;
-    height: 40px;
+    height: 40px;   
+}
+
+.page_logo
+{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
     align-items: center;
 }
 
 .homepage_foto
 {
     width: 100%;
-    height: 100%;
-    margin: 0;
+    overflow: hidden;
+}
+
+.nav_line_top
+{   
+    padding: 2px;
+    height: 2px;
+    width: 100%
+    border-radius: 10%;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+.nav_line_bottom
+{
+    height: 2px;
+    padding: 2px;
+    position: relative;
+    background-color: var(--blue);
 }
 
 ul
 {
-    margin-top: 20px;
-    list-style: none;
+    display: flex;
+    margin-left: 25%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -68,11 +100,20 @@ li
     max-height: 100%;
 }
 
+.Login_foto_container
+{
+    display: flex;
+    margin-left: 31%;
+    padding: 0;
+    align-items: center;
+}
+
 a
 {
     text-decoration: none;
     color: var(--blue);
-    font-size: 1rem;
+    font-size: 19px;
+    font-family: "Circular", "Caveat", sans-serif;
 }
 
 a:hover
@@ -80,36 +121,23 @@ a:hover
     color: var(--red);
 }
 
-.navbar
+nav
 {
     width: 100%;
-    height: 60px;
-    max-width: 1400px;
+    height: 90px;
     display: flex;
-    justify-content: center;
     overflow: hidden;
     position: fixed;
-    margin-top: 10px;
-    justify-content: space-between;
+    background-color: var(--yellow);
+    z-index: 10;
+    margin-right: 0;
 }
 
-.link
-{
-    display: flex;
-    gap: 2rem;
-}
-
-hr
-{
-    padding: 2px;
-    background-color: var(--blue);
-}
-
-.homepage
+.homepage_box
 {
     width: 100vw;
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 90px;
     position: relative;
     display: inline-block;
 }
@@ -121,35 +149,48 @@ hr
     height: auto;
 }
 
-.homepage_text
+.homepage_content
 {
     position: absolute;
+    top: 130px;
+    left: 100px;
     width: 550px;
     height: auto;
     background-color: var(--yellow);
     color: black;
-    color: var(--yellow);
     padding: 10px 20px; 
     font-size: 20px; 
     text-align: center;
-    top: 150px;
-    left: 100px;
     border-radius: 15px;
     margin: 20px;
 }
 
-.titel
+.home_titel
 {
     color: black;
-    font-size: 30px;
+    font-size: 32px;
     font-family: "Circular", "Caveat", sans-serif;
     margin: 20px;
 }
 
-.al1
+.home_text
 {
     color: black;
     font-size: 18px;
     font-family: "Circular", "Caveat", sans-serif;
     margin-bottom: 20px;
+}
+
+.ondek_meer
+{
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    align-content: center;
+    background-color: var(--blue);
+}
+
+.ondek_meer_text
+{
+    color: var(--yellow);
 }
