@@ -32,7 +32,7 @@
 }
 
 
-/*Linker blok*/
+
 .koffieDrankenUp
 {
     grid-column: 2/3;
@@ -43,7 +43,7 @@
     color: var(--yellow);
 }
 
-.koffieContentUp /*Tekst*/
+.koffieContentUp 
 {
     grid-column: 2/3;
     grid-row: 2/3; 
@@ -68,7 +68,7 @@
     padding-top: 40px;
 }
 
-.koffieContentDown /*Tekst*/
+.koffieContentDown 
 {
     grid-column: 2/3;
     grid-row: 4/5; 
@@ -78,10 +78,10 @@
 }
 
 
-/*End Linker blok*/
 
 
-/*Rechter blok*/
+
+
 .gebakSnoepUp
 {
     grid-column: 4/5;
@@ -104,7 +104,7 @@
     padding-top: 10px;
 }
 
-.gebakContentUp /*Tekst*/
+.gebakContentUp
 {
     grid-column: 4/5;
     grid-row: 2/3; 
@@ -114,7 +114,7 @@
     text-align: center;
 }
 
-.gebakContentDown /*Tekst*/
+.gebakContentDown
 {
     grid-column: 4/5;
     grid-row: 4/5; 
@@ -122,7 +122,7 @@
     color: var(--yellow);
     font-size: 15px;
 }
-/*End Rechter blok*/
+
 
 
 
