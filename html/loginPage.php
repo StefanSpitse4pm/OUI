@@ -1,4 +1,15 @@
 <?php 
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+
+}
+
+if (!empty($_SESSION['user'])) {
+    header("Location: ../html/laCarte.html");
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_start();
 
@@ -8,19 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    if (isset($_SESSION['user'])) {
-        header("Location: ../html/laCarte.html");
-        exit();
-    }
+    
 
     $users = [
         "user" => [ "email" => "user@user.com", "password" => "user"]
     ];
 
-    if (session_status() !== PHP_SESSION_ACTIVE) {
-        session_start();
     
-    }
 
     $failed = '';
 
