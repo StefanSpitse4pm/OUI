@@ -12,6 +12,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+    font-family: "Circular";
+    src: url(../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url(../fonts/caveat.regular.ttf);
+}
+
 header
 {
     width: auto;
@@ -43,16 +53,6 @@ header
     width: 100%;
     height: 100%;
     margin: 0;
-}
-
-@font-face {
-    font-family: "Circular";
-    src: url(../fonts/CircularStd-Book.otf);
-}
-
-@font-face {
-    font-family: "Caveat";
-    src: url(../fonts/caveat.regular.ttf);
 }
 
 ul
@@ -111,15 +111,45 @@ hr
     height: 100vh;
     margin-top: 100px;
     position: relative;
+    display: inline-block;
+}
+
+.homepage_foto
+{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .homepage_text
 {
     position: absolute;
-    width: 300px;
-    height: 200px;
+    width: 550px;
+    height: auto;
     background-color: var(--yellow);
+    color: black;
     color: var(--yellow);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    top: 150px;
+    left: 100px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.titel
+{
+    color: black;
+    font-size: 30px;
+    font-family: "Circular", "Caveat", sans-serif;
+    margin: 20px;
+}
+
+.al1
+{
+    color: black;
+    font-size: 18px;
+    font-family: "Circular", "Caveat", sans-serif;
+    margin-bottom: 20px;
 }
