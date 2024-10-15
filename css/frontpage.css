@@ -28,6 +28,7 @@ header
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .oui_koffie
@@ -38,17 +39,18 @@ header
 
 .oui_logo
 {
-    width: 65px;
+    width: 75px;
     height: 65px;
     position: absolute;
-    top: 19px;
-    left: 85px;
+    top: 32px;
+    left: 72px;
 }
 
 .login-logo
 {
     width: 40px;
-    height: 40px;   
+    height: 40px;  
+    margin-right: 40px; 
 }
 
 .page_logo
@@ -62,14 +64,12 @@ header
 .homepage_foto
 {
     width: 100%;
-    overflow: hidden;
 }
 
 .nav_line_top
 {   
     padding: 2px;
     height: 2px;
-    width: 100%
     border-radius: 10%;
     justify-content: center;
     background-color: var(--blue);
@@ -116,21 +116,42 @@ a
     font-family: "Circular", "Caveat", sans-serif;
 }
 
-a:hover
+li > a:hover
 {
     color: var(--red);
+    border-bottom: var(--red) 1px solid;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out
 }
 
 nav
 {
     width: 100%;
-    height: 90px;
+    height: 120px;
     display: flex;
     overflow: hidden;
     position: fixed;
     background-color: var(--yellow);
     z-index: 10;
     margin-right: 0;
+}
+
+.nav_line_top
+{
+    position: absolute;
+    width: 95%;
+    top: 8px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.nav_line_bottom
+{
+    position: absolute;
+    width: 95%;
+    top: 85px;
+    left: 20px;
+    border-radius: 20px;
 }
 
 .homepage_box
