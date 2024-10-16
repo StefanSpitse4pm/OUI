@@ -12,68 +12,90 @@
         <hr>        
     </div>
     <main>
-        <section class="reviews-section">
-            <div class="review-card">
-                <div class="review-header">
+        <section class="reviewsSection">
+            <div class="reviewCard">
+                <div class="reviewHeader">
                     <h3>Klanten recensie</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
-                <div class="review-text">
+                <div class="reviewText">
                     <p>Gezellige sfeer met een modern tintje, heerlijke cappuccino en vriendelijk personeel. Een vorborgen parel voor koffieliefhebbers!</p>
-                    <div class="review-user">
+                    <div class="reviewUser">
                         <p><em>— Berta Koekkoek</em></p>
                     </div>
                 </div>
             </div>
 
-            <div class="review-card">
-                <div class="review-header">
+            <div class="reviewCard">
+                <div class="reviewHeader">
                     <h3>Klanten recensie</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
-                <div class="review-text">
+                <div class="reviewText">
                     <p>Heerlijke koffie, knusse Parijse sfeer en supervriendelijke service. Een stukje Frankrijk in elke slok!</p>
-                    <div class="review-user">
+                    <div class="reviewUser">
                         <p><em>— Henk Warrek</em></p>
                     </div>
                 </div>
             </div>
 
-            <div class="review-card">
-                <div class="review-header">
+            <div class="reviewCard">
+                <div class="reviewHeader">
                     <h3>Klanten recensie</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
-                <div class="review-text">
+                <div class="reviewText">
                     <p>De sfeer is echt geweldig; het voelt alsof ik in een gezellig Frans cafe sta. Het roept helemaal die 
                         typische Franse sfeer op en brengt me echt in gedachten terug naar Frankrijk.</p>
-                    <div class="review-user">
+                    <div class="reviewUser">
                         <p><em>— Bo Ter Ham</em></p>
                     </div>
                 </div>
             </div>
 
-            <div class="review-card">
-                <div class="review-header">
+            <div class="reviewCard">
+                <div class="reviewHeader">
                     <h3>Klanten recensie</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
-                <div class="review-text">
+                <div class="reviewText">
                     <p>Authentieke Franse ambiance, verrukkelijke espresso en charmante bediening. Een must-visit voor koffieliefhebbers!</p>
-                    <div class="review-user">
+                    <div class="reviewUser">
                         <p><em>— Hans Frans</em></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="review-buttons">
+        <div class="reviewButtons">
             <button>Lees al onze reviews!</button>
-            <button>Laat een review achter!</button>
+        </div>
+
+        <div class="reviewFormulier">
+            <div class="formulierTitle">
+                <h2>Plaats uw eigen review!</h2>
+            </div>
+            <hr>
+            <div class="userReviewSection">
+            <form>
+                <label for="name">Voornaam:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Achternaam:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="review">Uw review:</label>
+                <textarea id="review" name="review" rows="20" required></textarea>
+
+                <button type="submit">Review versturen</button>
+            </form>
         </div>
     </main>
 </body>

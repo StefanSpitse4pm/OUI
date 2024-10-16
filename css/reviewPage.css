@@ -15,7 +15,7 @@ body {
 }
 
 /* Algemene stijlen voor de review sectie */
-.reviews-section 
+.reviewsSection 
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,7 +29,7 @@ body {
 }
 
 /* Review kaarten */
-.review-card 
+.reviewCard 
 {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
@@ -38,11 +38,11 @@ body {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3 ease; /* Vloeiende overgang van 'transform' en 'box-shadow' in 0.3s met 'ease'. */
     max-width: 400px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 /* Stijl voor header text van review */
-.review-card > .review-header
+.reviewCard > .reviewHeader
 {
     display: flex; /* Flexbox inschakelen */
     justify-content: space-between; /* Ruimte tussen de header tekst en rating sterren */
@@ -52,41 +52,71 @@ body {
     padding-top: 0;
 }
 
-.review-card > hr
+.reviewCard > hr
 {
     margin: -10px 0;
 }
 
 /* Font voor text van Review kaarten */
-.review-card > .review-text
+.reviewCard > .reviewText
 {
     font-family: 'CircularStd-Book';
 }
 
 /* Kleurcode sterren */
-.review-card > .review-header > .rating
+.reviewCard > .reviewHeader > .rating
 {
     color: hsl(53, 100%, 50%);
 }
 
-.review-card > .review-text > .review-user
+.reviewCard > .reviewText > .reviewUser
 {
     font-family: 'Caveat-Regular';
     font-size: 20px;
 }
 
 /* Wanneer cursor over recensie gaat, gaat de recensie hoveren */
-.review-card:hover
+.reviewCard:hover
 {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px hsl(0, 0%, 0%, 0.15);
 }
 
-.review-buttons
+.reviewButtons
 {
     display: flex;
     grid-column: 1/ -1; /* Strekt zich uit over de kolommen van de grid */
     justify-content: center;
     gap: 20px; /* Ruimte tussen knoppen */
     margin-top: 20px; /* Voegt wat ruimte toe tussen de knoppen en de reviews */
+}
+.reviewFormulier
+{
+    padding: 40px;
+    font-family: 'CircularStd-Book';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewFormulier > .formulierTitle
+{
+    display: grid;
+    justify-content: center;
+}
+
+.reviewFormulier > .userReviewSection form label
+{
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reviewFormulier > .userReviewSection form textarea,
+.reviewFormulier > .userReviewSection form input
+{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
 }
