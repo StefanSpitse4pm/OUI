@@ -137,19 +137,68 @@
 }
 
 
+.menuOfDay
+{
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 6/7;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 3fr 3fr 0.25fr 0.25fr;
+    min-height: auto;
+    background-color: var(--red);
+    color: var(--yellow);
+}
 
+.whiteRowUp
+{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: var(--yellow);
+}
+
+.whiteRowDown
+{
+    grid-column: 1/4;
+    grid-row: 5/6;
+    background-color: var(--yellow);
+}
+
+.menuOfDayContentUp
+{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-family: "Circular";
+    text-align: center;
+    font-size: 25px;
+    max-height: 10px;
+    margin: 5px;
+}
+
+.menuOfDayContentDown
+{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-family: "Circular";
+    text-align: center;
+    font-size: 25px;
+    max-height: 10px;
+    margin: 5px;
+    padding-bottom: 20px;
+}
 
 
 
 .backgroundMenu
 {
     grid-template-columns: 2fr 4fr 0.75fr 4fr 2fr;
-    grid-template-rows: 1fr 0.5fr 0.125fr 5fr 0.25fr 0.125fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr 0.125fr 5fr 0.125fr 0.4fr 0.5fr;
     display: grid;
     background-color: var(--yellow);
     min-height: 100vh;
     padding: 0px 0px;
 }
+
+
 
 h1
 {
