@@ -1,3 +1,9 @@
+<?php 
+    if (empty($_SESSION['user'])) {
+        header("Location: ../html/loginPage.php");
+        exit();
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +30,9 @@
                 <li><a href="reviewPage.html">Reviews</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
-            <?php if (!empty($_SESSION['user'] )): ?>
+            <?php if (!empty($_SESSION['username'] )): ?>
                 <div class="logout_foto_container">
-                    <a href="../html/Frontpage.php"><img class="logout-logo" src="../img/logout-logo.svg" alt="logout-logo"></a>
+                    <a href="../functies/logoutfunction.php"><img class="logout-logo" src="../img/logout-logo.svg" alt="logout-logo"></a>
                 </div>
             <?php else:?>
                 <div class="Login_foto_container">
