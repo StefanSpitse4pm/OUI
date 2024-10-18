@@ -1,9 +1,3 @@
-<?php 
-    if (empty($_SESSION['username'])) {
-        header("Location: ../html/loginPage.php");
-        exit();
-    }
-    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
