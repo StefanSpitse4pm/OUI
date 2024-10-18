@@ -1,9 +1,12 @@
 <?php
 
-    session_start();
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        session_start();
+
+    }
 
     if (isset($_SESSION['user'])) {
-        header("Location: ../html/menu.html");
+        header("Location: ../html/Frontpage.php");
         exit();
     }
 
@@ -11,10 +14,7 @@
         "user" => [ "email" => "user@user.com", "password" => "user"]
     ];
 
-    if (session_status() !== PHP_SESSION_ACTIVE) {
-        session_start();
     
-    }
 
     $failed = '';
 
