@@ -18,7 +18,7 @@
 {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 700px 1fr;
+    grid-template-rows: 1fr 673px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
 }
@@ -33,52 +33,16 @@ body
     background-position: center;
 }
 
-.flagblue1
+.frenchflag1
 {
     display: grid;
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    background-color: darkblue
+    grid-row: 1 / 2
 }
 
-.flagblue2
+.frenchflag2
 {
     display: grid;
-    grid-row: 3;
-    grid-column: 1 / 2;
-    background-color: darkblue
-}
-
-.flagwhite1
-{
-    display: grid;
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    background-color: white
-}
-
-.flagwhite2
-{
-    display: grid;
-    grid-row: 3;
-    grid-column: 2 / 3;
-    background-color: white
-}
-
-.flagred1
-{
-    display: grid;
-    grid-row: 1 / 2;
-    grid-column: 3;
-    background-color: red
-}
-
-.flagred2
-{
-    display: grid;
-    grid-row: 3;
-    grid-column: 3;
-    background-color: red
+    grid-row: 3
 }
 
 .container
