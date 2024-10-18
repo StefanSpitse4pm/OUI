@@ -199,6 +199,10 @@ input[type="submit"]:hover , input[type="checkbox"]:hover
     cursor: pointer;
 }
 
+select {
+    max-width: 150px;
+}
+
 @media (max-width: 500px) {
     .loginContent {
         padding: 20px;

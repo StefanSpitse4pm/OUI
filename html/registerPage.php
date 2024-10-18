@@ -5,25 +5,44 @@
     
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = filter_input(INPUT_POST, "username");
+        if ($username == False) {
+            $username = "error";
+        }
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+        if ($email == False) {
+            $email = "error";
+        }
         $password = filter_input(INPUT_POST, "password");
         $passwordRepeat = filter_input(INPUT_POST, "passwordRepeat");
         $tos = filter_input(INPUT_POST, "TOS", FILTER_VALIDATE_BOOL);
-    
-        
-        
-        $error = passwordValidation($password, $passwordRepeat);
-        if (empty($error) && !empty($tos)) 
-        {
-            $_SESSION['username'] = $username;  
-            $_SESSION['email'] = $email;
-            header("Location: Frontpage.html");
-            exit();
+        $usernameError = generalFieldValidation($username, "username", 4);
+        $emailError = generalFieldValidation($email, "email", 6);
+        $passwordError = passwordValidation($password, $passwordRepeat);  
+        if (empty($usernameError)) {
+            if (empty($emailError)) {
+                if (empty($passwordError)) {
+                    if (!empty($tos)) {
+                        $_SESSION['username'] = $username;  
+                        $_SESSION['email'] = $email;
+                        header("Location: Frontpage.php");
+                        exit();
+                    } else {
+                        $error = "<h2>The terms of service is required</h2>";
+                        // tos empty
+                    }
+                } else {
+                $error = $passwordError;
+                    // password error
+                }
+            } else {
+                $error = $emailError;
+                // email error
+
+            }
+        }   else {
+            $error = $usernameError; 
+            // username error
         }
-        else {
-        $error  = "Terms of service is required.";
-        }
-        
     }
     
 
@@ -49,22 +68,29 @@
                 <div class="loginform">
                     <form action="registerPage.php" method="POST">
                         <label for="username">Gebruikersnaam</label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="username" required>
                         <label for="email">Emailadres</label>
-                        <input type="text   " name="email" id="email">
+                        <input type="text   " name="email" id="email" required>
                         <label for="password">Wachtwoord</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                         <label for="passwordRepeat">Herhaal Wachtwoord</label>
-                        <input type="password" name="passwordRepeat" id="passwordRepeat">
+                        <input type="password" name="passwordRepeat" id="passwordRepeat" required>
+                        <label for="gender">Gender: </label>
+                        <select name="gender" id="gender" required>
+                            <option value="man">Man</option>
+                            <option value="vrouw">Vrouw</option>
+                            <option value="anders">Andere</option>
+                            <option value="None">zeg ik liever niet</option>
+                        </select>
                         <div class="checkboxbox">
-                            <input type="checkbox" value='true' name="TOS" id="TOS">
+                            <input type="checkbox" value='true' name="TOS" id="TOS" required>
                             <label for="TOS">Ik ga akkoord met de <a href="">algemene voorwaarden</a></label>
                         </div>
                         <div class="checkboxbox">
                             <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief">
                             <label for="nieuwsbrief">Ja, ik wil me inschrijven voor updates en het laatste nieuws van Café OUI!</label>
-                            <input type="submit" value="Submit">
-                        </div>  
+                        </div>
+                        <input type="submit" value="Submit">
                     </form>
                     <div class='error'>
                         <?php if ($_SERVER['REQUEST_METHOD'] === "POST" && !empty($error)) {
