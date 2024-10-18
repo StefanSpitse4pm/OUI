@@ -29,7 +29,7 @@
         if (!empty($users[$username]) && $users[$username]['password'] === $password) {
             if ($users[$username]['email'] === $email) {
                 $_SESSION['user'] = $email;
-                header("Location: ../html/menu.html");
+                header("Location: ../html/Frontpage.php");
                 exit();
             } else {
                 $failed = "<div class='error'><h2>Ongeldige email of wachtwoord.</h2></div>";
