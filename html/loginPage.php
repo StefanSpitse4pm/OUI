@@ -1,6 +1,7 @@
 <?php 
     require '../functies/loginfunction.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
