@@ -12,6 +12,12 @@
 
 body {
     background-color: hsl(50, 58%, 83%);
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    width: 100%;
 }
 
 /* Algemene stijlen voor de review sectie */
@@ -57,13 +63,11 @@ body {
     margin: -10px 0;
 }
 
-/* Font voor text van Review kaarten */
 .reviewCard > .reviewText
 {
     font-family: 'CircularStd-Book';
 }
 
-/* Kleurcode sterren */
 .reviewCard > .reviewHeader > .rating
 {
     color: hsl(53, 100%, 50%);
@@ -75,25 +79,26 @@ body {
     font-size: 20px;
 }
 
-/* Wanneer cursor over recensie gaat, gaat de recensie hoveren */
 .reviewCard:hover
 {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px hsl(0, 0%, 0%, 0.15);
 }
 
-.reviewButtons
+.reviewButton
 {
     display: flex;
-    grid-column: 1/ -1; /* Strekt zich uit over de kolommen van de grid */
+    grid-column: 1/ -1; 
     justify-content: center;
-    gap: 20px; /* Ruimte tussen knoppen */
-    margin-top: 20px; /* Voegt wat ruimte toe tussen de knoppen en de reviews */
+    gap: 20px;
+    margin-top: 20px;
+    font-family: 'Caveat-Regular';
+    font-size: 35px;
 }
 .reviewFormulier
 {
     padding: 40px;
-    font-family: 'CircularStd-Book';
+    font-family: 'Caveat-Regular';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,6 +108,7 @@ body {
 {
     display: grid;
     justify-content: center;
+    font-size: 30px;
 }
 
 .reviewFormulier > .userReviewSection form label
@@ -110,13 +116,42 @@ body {
     display: flex;
     margin-top: 15px;
     font-weight: bold;
+    font-family: 'CircularStd-Book' ;
 }
 
-.reviewFormulier > .userReviewSection form textarea,
-.reviewFormulier > .userReviewSection form input
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+
+}
+
+input, textarea, input[type="submit"]
 {
     width: 100%;
     max-width: 600px;
     padding: 10px;
     font-size: 16px;
+    font-family: 'CircularStd-Book' ;
+}
+
+form > input[type="submit"]
+{
+    width: 600px;
+    min-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'CircularStd-Book' ;
+    height: 70px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.frankrijkVlag
+{
+    width: 100%;
+    height: 50px;
 }

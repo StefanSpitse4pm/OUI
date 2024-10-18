@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="../css/reviewPage.css" type="text/css">
 </head>
 <body>
-    <div class="reviewPage">
-        <h1>Behind you.</h1>
-        <hr>        
-    </div>
+    <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
     <main>
         <section class="reviewsSection">
             <div class="reviewCard">
@@ -22,7 +19,7 @@
                 <div class="reviewText">
                     <p>Gezellige sfeer met een modern tintje, heerlijke cappuccino en vriendelijk personeel. Een vorborgen parel voor koffieliefhebbers!</p>
                     <div class="reviewUser">
-                        <p><em>— Berta Koekkoek</em></p>
+                        <p><em>— Robbin Schipper</em></p>
                     </div>
                 </div>
             </div>
@@ -71,8 +68,8 @@
             </div>
         </section>
 
-        <div class="reviewButtons">
-            <button>Lees al onze reviews!</button>
+        <div class="reviewButton">
+            <a href="https://nl.trustpilot.com/">Lees hier al onze reviews</a>
         </div>
 
         <div class="reviewFormulier">
@@ -81,7 +78,7 @@
             </div>
             <hr>
             <div class="userReviewSection">
-            <form>
+            <form action="" method="POST" class="">
                 <label for="name">Voornaam:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -89,14 +86,15 @@
                 <input type="text" id="lastName" name="lastName" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required>  
 
                 <label for="review">Uw review:</label>
                 <textarea id="review" name="review" rows="20" required></textarea>
-
-                <button type="submit">Review versturen</button>
+                
+                <input type="submit" value="Review Versturen">
             </form>
         </div>
     </main>
+    <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
 </body>
 </html>
