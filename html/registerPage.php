@@ -1,9 +1,9 @@
 <?php 
     require '../functies/validation.php';
-
-    session_start();
+    require '../functies/loginfunction.php';
     
     if($_SERVER["REQUEST_METHOD"] == "POST") {
+        session_start();
         $username = filter_input(INPUT_POST, "username");
         if ($username == False) {
             $username = "error";
@@ -24,6 +24,7 @@
                     if (!empty($tos)) {
                         $_SESSION['username'] = $username;  
                         $_SESSION['email'] = $email;
+                        
                         header("Location: Frontpage.php");
                         exit();
                     } else {
@@ -63,7 +64,7 @@
                 <img src="../Img/loginPage-foto.png" alt="coffee-drinking-image">
             </div>
             <div class="login">
-                <h1>Inloggen</h1>
+                <h1>Registratie</h1>
                 <hr>
                 <div class="loginform">
                     <form action="registerPage.php" method="POST">
@@ -80,7 +81,7 @@
                             <option value="man">Man</option>
                             <option value="vrouw">Vrouw</option>
                             <option value="anders">Andere</option>
-                            <option value="None">zeg ik liever niet</option>
+                            <option value="None">zeg ik liever niet</option>    
                         </select>
                         <div class="checkboxbox">
                             <input type="checkbox" value='true' name="TOS" id="TOS" required>

@@ -201,6 +201,14 @@ input[type="submit"]:hover , input[type="checkbox"]:hover
 
 select {
     max-width: 150px;
+    font-family: "Circular", sans-serif;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+select > option:nth-child(odd) {
+    background-color: lightgray;
 }
 
 @media (max-width: 500px) {
