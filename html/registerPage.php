@@ -15,6 +15,7 @@
         $password = filter_input(INPUT_POST, "password");
         $passwordRepeat = filter_input(INPUT_POST, "passwordRepeat");
         $tos = filter_input(INPUT_POST, "TOS", FILTER_VALIDATE_BOOL);
+        $gender = filter_input(INPUT_POST, "gender");
         $usernameError = generalFieldValidation($username, "username", 4);
         $emailError = generalFieldValidation($email, "email", 6);
         $passwordError = passwordValidation($password, $passwordRepeat);  
@@ -24,6 +25,7 @@
                     if (!empty($tos)) {
                         $_SESSION['username'] = $username;  
                         $_SESSION['email'] = $email;
+                        $_SESSION['gender'] = $gender;
                         
                         header("Location: Frontpage.php");
                         exit();
