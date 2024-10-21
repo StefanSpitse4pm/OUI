@@ -1,5 +1,5 @@
 <?php 
-    require '../functies/loginfunction.php';
+    include '../functies/loginfunction.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
                     }
                 ?>
                 <div class="loginform">
-                    <form action="../functies/loginfunction.php" method="POST">
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                         <label for="username">Gebruikersnaam</label>
                         <input type="text" name="username" id="username">
                         <label for="email">Emailadres</label>
@@ -33,8 +33,8 @@
                         <label for="password">Wachtwoord</label>
                         <input type="password" name="password" id="password">
                         <div class="checkboxbox">
-                            <input type="checkbox" name="TOS" id="TOS">
-                            <label for="TOS">Ik ga akkoord met de <a href="">algemene voorwaarden</a></label>
+                            <input type="checkbox" name="TOS" id="TOS" required>
+                            <label for="TOS">Ik ga akkoord met de <a href="#">algemene voorwaarden</a></label>
                         </div>
                         <div class="checkboxbox">
                             <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief">
