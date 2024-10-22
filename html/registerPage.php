@@ -58,6 +58,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Oui - Login</title>
     <link rel="stylesheet" href="../css/loginPage.css" type="text/css">
+    <link rel="stylesheet" href="../css/registerPage.css" type="text/css">
 </head>
 <body>
     <main>
