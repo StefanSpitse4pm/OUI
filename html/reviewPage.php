@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     <link rel="stylesheet" href="../css/reviewPage.css" type="text/css">
 </head>
 <body>
+    
     <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
     <main>
         <section class="reviewsSection">
@@ -94,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <div class="reviewButton">
             <a href="https://nl.trustpilot.com/">Lees hier al onze reviews</a>
         </div>
-
+        <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
         <div class="reviewFormulier">
             <div class="formulierTitle">
                 <h2>Plaats uw eigen review!</h2>

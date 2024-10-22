@@ -10,7 +10,8 @@
     src: url('../fonts/CircularStd-Book.otf');
 }
 
-body {
+body 
+{
     background-color: hsl(50, 58%, 83%);
     width: 100%;
     margin: 0;
