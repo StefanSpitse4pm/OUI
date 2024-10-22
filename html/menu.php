@@ -116,7 +116,58 @@
                 <div class="menuOfDay">
                     <div class="whiteRowUp"></div> 
                     <p class="menuOfDayContentUp">Gerecht van de dag:</p>
-                    <p class="menuOfDayContentDown">Soep</p>
+
+                    <p class = "menuOfDayContentDown">
+                        
+                    <?php
+                    $today = date('l');
+
+                    $foodDrinks [0] = "Croissant";
+                    $foodDrinks [1] = "Thee naar keuze";
+                    $foodDrinks [2] = "Cappuccino";
+                    $foodDrinks [3] = "Macarons";
+                    $foodDrinks [4] = "Mokka";
+                    $foodDrinks [5] = "Warme chocolademelk";
+                    $foodDrinks [6] = "Crème Brûlée";
+
+
+                    if ($today == "Monday")
+                    {
+                        echo $foodDrinks[0]; 
+                    }
+
+                    elseif ($today == "Tuesday")
+                    {
+                        echo $foodDrinks[1];
+                    }
+
+                    elseif ($today == "Wednesday")
+                    {
+                        echo $foodDrinks[2];
+                    }
+
+                    elseif ($today == "Thursday")
+                    {
+                        echo $foodDrinks[3];
+                    }
+
+                    elseif ($today == "Friday")
+                    {
+                        echo $foodDrinks[4];
+                    }
+
+                    elseif ($today == "Saturday")
+                    {
+                        echo $foodDrinks [5];
+                    }
+
+                    elseif ($today == "Sunday")
+                    {
+                        echo $foodDrinks [6];
+                    }
+
+                    ?>
+                    </p>
                     <div class="whiteRowDown"></div>
 
                 </div>

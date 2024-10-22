@@ -170,7 +170,7 @@
     font-family: "Circular";
     text-align: center;
     font-size: 25px;
-    max-height: 10px;
+    max-height: 15px;
     margin: 5px;
 }
 
@@ -181,7 +181,7 @@
     font-family: "Circular";
     text-align: center;
     font-size: 25px;
-    max-height: 10px;
+    max-height: 15px;
     margin: 5px;
     padding-bottom: 20px;
 }
@@ -196,17 +196,4 @@
     background-color: var(--yellow);
     min-height: 100vh;
     padding: 0px 0px;
-}
-
-
-
-h1
-{
-    text-align: center;
-    font-size: 3rem;
-}
-
-hr
-{
-    color: var(--red);
 }
