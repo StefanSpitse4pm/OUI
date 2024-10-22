@@ -26,13 +26,6 @@ body {
     align-items: center;
     height: 100vh;
     position: relative;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-image: url('../Img/pexels-chevanon-photography-333523.jpg');
     background-size: cover;
     background-position: center;
@@ -203,8 +196,9 @@ select {
     border-radius: 10px;
 }
 
-select > option:nth-child(odd) {
-    background-color: lightgray;
+.registerlink
+{
+    font-size: 1.2rem;
 }
 
 @media (max-width: 500px) {
