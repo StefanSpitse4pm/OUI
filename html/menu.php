@@ -115,8 +115,72 @@
 
                 <div class="menuOfDay">
                     <div class="whiteRowUp"></div> 
-                    <p class="menuOfDayContentUp">Gerecht van de dag:</p>
-                    <p class="menuOfDayContentDown">Soep</p>
+                    <p class="menuOfDayContentUp">~ Gerecht van de dag ~</p>
+
+                    <p class = "menuOfDayContentDown">
+
+                    <?php
+                    $today = date('l');
+
+                    $food [0] = "Croissant";
+                    $food [1] = "Pain au Chocolat";
+                    $food [2] = "Macarons";
+                    $food [3] = "Éclair";
+                    $food [4] = "Tarte Tatin";
+                    $food [5] = "Madeleines";
+                    $food [6] = "Crème Brûlée";
+                    $food [7] = "Financiers";
+
+                    $drink [0] = "Espresso";
+                    $drink [1] = "Café au Lait";
+                    $drink [2] = "Cappuccino";
+                    $drink [3] = "Latte";
+                    $drink [4] = "Mokka";
+                    $drink [5] = "Macchiato";
+                    $drink [6] = "Warme chocolademelk";
+                    $drink [7] = "Thee naar keuze";
+
+
+
+                    if ($today == "Monday")
+                    {
+                        echo $food[0] . " met " . $drink[1]; 
+                    }
+
+                    elseif ($today == "Tuesday")
+                    {
+                        echo $food[1] . " met " . $drink[6];
+                    }
+
+                    elseif ($today == "Wednesday")
+                    {
+                        echo $food[2] . " met " . $drink[7];                    
+                    }
+
+                    elseif ($today == "Thursday")
+                    {
+                        echo $food[3] . " met " . $drink[0];                    
+                    }
+
+                    elseif ($today == "Friday")
+                    {
+                        echo $food[4] . " met " . $drink[3];                    
+                    }
+
+                    elseif ($today == "Saturday")
+                    {
+                        echo $food[5] . " met " . $drink[2];                    
+                    }
+
+                    elseif ($today == "Sunday")
+                    {
+                        echo $food[6] . " met " . $drink[5];                    
+                    }
+
+                    ?>
+                    
+                    </p>
+
                     <div class="whiteRowDown"></div>
 
                 </div>
