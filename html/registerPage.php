@@ -1,9 +1,11 @@
 <?php 
     require '../functies/validation.php';
     require '../functies/loginfunction.php';
-    
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        session_start();
+        
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         $username = filter_input(INPUT_POST, "username");
         if ($username == False) {
             $username = "error";
@@ -26,7 +28,9 @@
                         $_SESSION['username'] = $username;  
                         $_SESSION['email'] = $email;
                         $_SESSION['gender'] = $gender;
-                        
+                        $users[$username] = ["email" => $email,
+                                             "username" => $username,
+                    ];
                         header("Location: Frontpage.php");
                         exit();
                     } else {
@@ -58,7 +62,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Oui - Login</title>
     <link rel="stylesheet" href="../css/loginPage.css" type="text/css">
-    <link rel="stylesheet" href="../css/registerPage.css" type="text/css">
+    <link rel="stylesheet" href="../css/registerPage.css" type="text/css">  
 </head>
 <body>
     <main>
