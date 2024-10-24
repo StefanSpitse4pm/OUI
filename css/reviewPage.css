@@ -29,7 +29,7 @@ main {
     gap: 20px;
     row-gap: 60px;
     padding: 40px;
-    background-color: hsl(50, 58%, 83%)
+    background-color: hsl(50, 58%, 83%);
     justify-content: center;
     max-width: 70vw; /* Beperkt de breedte van de grid */
     margin: 0 auto;
@@ -41,8 +41,8 @@ main {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     padding: 20px;
+    padding-top: 40px;
     font-family: 'Caveat-Regular';
-    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3 ease; /* Vloeiende overgang van 'transform' en 'box-shadow' in 0.3s met 'ease'. */
     max-width: 500px;
     margin: 0 auto;
@@ -84,9 +84,9 @@ main {
 }
 
 .reviewCard:hover
-{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px hsl(0, 0%, 0%, 0.15);
+{   
+    /* transform: translateY(-5px); */
+    box-shadow: 0 6px 15px hsla(0, 0%, 0%, 0.15);
 }
 
 .reviewButton

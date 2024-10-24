@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 ?>
 
 <div class="reviewPage">
-    <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
+    <img src="img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag" id="review">
     <main>
         <section class="reviewsSection">
             <div class="reviewCard">
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 </div>
             </div>
 
-            <div class="reviewCard">
+            <div class="reviewCard" >
                 <div class="reviewHeader">
                     <h3>Klanten review</h3>
                     <div class="rating">★★★★★</div>
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <div class="reviewButton">
             <a href="https://nl.trustpilot.com/">Lees hier al onze reviews</a>
         </div>
-        <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlagMiddle">
+        <img src="img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlagMiddle">
         <div class="reviewFormulier">
             <div class="formulierTitle">
                 <h2>Plaats uw eigen review!</h2>

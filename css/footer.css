@@ -39,27 +39,20 @@ body
 
 }
 
-.container
+.footer-container
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding: 100px;
 }
 
-.map
-{
-    display: grid;
-    grid-row: 2;
-    grid-column: 1 / 2;
-    justify-content: center;
-    align-items: center;
-}
 
 .mapbox
 {
     padding: 5px;
-    height: 240px;
-    width: 300px;
+    height: 250px;
+    width: 310px;
     background-image: url(../Img/frenchflag.png);
     background-size: contain;
     background-position: center;

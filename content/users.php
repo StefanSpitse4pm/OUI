@@ -11,4 +11,10 @@
     'password' => 'Moidepoi@1',
     'gender' => 'man',
   ),
+  'ta' => 
+  array (
+    'email' => 'tagordo35@gmail.com',
+    'password' => 'WACHTWOORD!w1',
+    'gender' => 'man',
+  ),
 );

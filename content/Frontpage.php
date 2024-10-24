@@ -13,10 +13,9 @@ if (session_status() == PHP_SESSION_NONE) {
     <title>Caffee OUI</title>
 </head>
 <body>
-    <?php include '../functies/samenvoeg-nav.php'?> 
+    <?php include 'functies/samenvoeg-nav.php'?> 
 
     <div class="homepage_box">
-        <img class="homepage_foto" src="../img/homepage-foto.jpeg" alt="homepage-foto">
             <div class="homepage_content">
                 <h2 class="home_titel">Café Oui: Waar Smaak en Sfeer Samenkomen</h2>
                 <p class="home_text">Hoog in de bergen van Ethiopië, het thuisland van koffie, begint de reis van
@@ -40,6 +39,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
             </div>
     </div>
-    <?php include '../functies/samenvoeg-footer.php'?> 
+    <?php include 'functies/samenvoeg-footer.php'?> 
 </body>
 </html>

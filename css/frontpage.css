@@ -46,14 +46,14 @@ header
     width: 75px;
     height: 65px;
     position: absolute;
-    top: 32px;
-    left: 72px;
+    top: 20px;
+    left: 82px;
 }
 
 .login-logo
 {
     position: absolute;
-    top: 35%;
+    top: 25%;
     right: 3%;
     height: 40px;  
 }
@@ -61,7 +61,7 @@ header
 .logout-logo
 {
     position: absolute;
-    top: 35%;
+    top: 25%;
     right: 3%;
     height: 40px;  
 }
@@ -99,7 +99,7 @@ header
 .link
 {
     display: flex;
-    margin-left: 25%;
+    margin-left: 30%;
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -149,10 +149,17 @@ nav
     display: flex;
     overflow: hidden;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--yellow);
     z-index: 10;
     margin-right: 0;
     border-bottom: 4px solid var(--blue);
+    align-items: center;
+}
+
+nav > *, .page_logo {
+    margin-bottom: 10px;
 }
 
 .nav_line_top
@@ -186,11 +193,7 @@ nav
     gap: 10px;
     background-color: var(--yellow);
     border-top: 4px solid var(--blue);
-}
-
-.socials-a
-{
-    
+    z-index: 10;
 }
 
 .facebook-foto
@@ -211,11 +214,15 @@ nav
 
 .homepage_box
 {
+    background-image: url("../img/homepage-foto.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     margin-top: 90px;
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .homepage_foto

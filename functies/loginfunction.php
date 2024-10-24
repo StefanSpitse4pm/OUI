@@ -21,7 +21,7 @@ function login($username, $email, $password, $users) {
             if ($users[$username]['email'] === $email) {
                 $_SESSION['username'] = $username;
                 $_SESSION['gender'] = $gender;
-                header("Location: ../html/Frontpage.php");
+                header("Location: ../html/index.php");
                 exit();
             } else {
                 return "<div class='error'><h2>Ongeldige email of wachtwoord.</h2></div>";
