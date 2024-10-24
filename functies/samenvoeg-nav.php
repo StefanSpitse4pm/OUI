@@ -24,11 +24,11 @@ if (session_status() == PHP_SESSION_NONE) {
                 </a>
             </div>
             <ul class="link">
-                <li><a href="Frontpage.html">Home</a></li>
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="reviewPage.html">Reviews</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a class="nav-link" href="Frontpage.html">Home</a></li>
+                <li><a class="nav-link" href="aboutus.html">About</a></li>
+                <li><a class="nav-link" href="menu.html">Menu</a></li>
+                <li><a class="nav-link" href="reviewPage.html">Reviews</a></li>
+                <li><a class="nav-link" href="contact">Contact</a></li>
             </ul>
 
             <?php if (!empty($_SESSION['username'] )): ?>

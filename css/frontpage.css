@@ -54,7 +54,7 @@ header
 {
     position: absolute;
     top: 35%;
-    right: 50px;
+    right: 3%;
     height: 40px;  
 }
 
@@ -62,7 +62,7 @@ header
 {
     position: absolute;
     top: 35%;
-    right: 50px;
+    right: 3%;
     height: 40px;  
 }
 
@@ -96,7 +96,7 @@ header
     background-color: var(--blue);
 }
 
-ul
+.link
 {
     display: flex;
     margin-left: 25%;
@@ -112,6 +112,17 @@ li
     list-style: none;
     max-height: 100%;
     text-decoration: none;
+    color: var(--blue);
+    font-size: 19px;
+    font-family: "Circular", "Caveat", sans-serif;
+}
+
+.nav-link
+{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 19px;
+    font-family: "Circular", "Caveat", sans-serif;
 }
 
 .logout-logo-a
@@ -166,7 +177,8 @@ nav
 {
     display: flex;
     position: absolute;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     justify-content: center;
     align-items: center;
     bottom: 0;
@@ -174,6 +186,11 @@ nav
     gap: 10px;
     background-color: var(--yellow);
     border-top: 4px solid var(--blue);
+}
+
+.socials-a
+{
+    
 }
 
 .facebook-foto
