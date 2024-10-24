@@ -14,7 +14,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <link rel="stylesheet" href="../css/Frontpage.css"  type="text/css">
 </head>
 <body class="menuBody">
-    <?php include '../functies/samenvoeg-nav.php'?>    
+    <?php include '../functies/samenvoeg-nav-offpage.php'?>    
     <main class="manuMain">
     
         <div class="backgroundMenu">
@@ -194,6 +194,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
         </div>
     </main>
-    
+    <?php include '../functies/samenvoeg-footer-offpage.php'?> 
 </body>
 </html>

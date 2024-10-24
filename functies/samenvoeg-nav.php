@@ -8,15 +8,15 @@ if (session_status() == PHP_SESSION_NONE) {
     <nav>
         <hr class="nav_line_top">
         <div class="page_logo">
-            <a href="Frontpage.html">
+            <a href="index.php">
                 <img class="oui_koffie" src="Img/illustrations_blue green_coffee.png" alt="coffie logo">
             </a>
-            <a href="Frontpage.html">
+            <a href="index.php">
                 <img class="oui_logo" src="Img/Logo-04.png" alt="oui_logo">
             </a>
         </div>
         <ul class="link">
-            <li><a class="nav-link" href="../index.php">Home</a></li>
+            <li><a class="nav-link" href="index.php">Home</a></li>
             <li><a class="nav-link" href="#aboutus" onclick="scrollToPage('aboutus')">About</a></li>
             <li><a class="nav-link" href="#menu" onclick="scrollToPage('menu')">Menu</a></li>
             <li><a class="nav-link" href="#review" onclick="scrollToPage('review')">Reviews</a></li>
