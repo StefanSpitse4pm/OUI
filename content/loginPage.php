@@ -44,7 +44,7 @@
                         </div>
                         <input type="submit" value="Inloggen">
                     </form>
-                    <a href="../html/registerPage.php" class="registerlink">Nog geen account?</a>
+                    <a href="registerPage.php" class="registerlink">Nog geen account?</a>
                 </div>
             </div>
         </div>
