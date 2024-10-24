@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 <div class="reviewPage">
     <img src="img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag" id="review">
-    <main>
+    <div class="main-review">
         <section class="reviewsSection">
             <div class="reviewCard">
                 <div class="reviewHeader">
