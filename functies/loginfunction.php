@@ -3,9 +3,11 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$users = [
-    "user" => [ "email" => "user@user.com", "password" => "user", "gender" => "man"]
-];
+// $users = [
+//     "user" => [ "email" => "user@user.com", "password" => "user", "gender" => "man"]
+// ];
+
+include "../html/users.php";
 
 function login($username, $email, $password, $users) {
     if (!empty($username) && !empty($email) && !empty($password)) {

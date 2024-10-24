@@ -1,11 +1,10 @@
 <?php 
+
     require '../functies/validation.php';
     require '../functies/loginfunction.php';
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
+        
         $username = filter_input(INPUT_POST, "username");
         if ($username == False) {
             $username = "error";
@@ -25,30 +24,39 @@
             if (empty($emailError)) {
                 if (empty($passwordError)) {
                     if (!empty($tos)) {
-                        $_SESSION['username'] = $username;  
-                        $_SESSION['email'] = $email;
-                        $_SESSION['gender'] = $gender;
-                        $users[$username] = ["email" => $email,
-                                             "username" => $username,
-                    ];
-                        header("Location: Frontpage.php");
-                        exit();
+                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                            $username = $_POST['username'];
+                            $password = $_POST['password'];
+                            $email = $_POST['email'];
+                            $gender = $_POST['gender'];
+                        
+                            // Add the new user to the $users array
+                            $users[$username] = [
+                                "email" => $email,
+                                "password" => $password,
+                                "gender" => $gender
+                            ];
+                        
+                            // Save the updated $users array back to the PHP file
+                            file_put_contents('users.php', '<?php $users = ' . var_export($users, true) . ';');
+                            header("Location: loginPage.php");
                     } else {
                         $error = "<h2>The terms of service is required</h2>";
                         // tos empty
                     }
                 } else {
-                $error = $passwordError;
-                    // password error
+                    $error = $passwordError;
+                        // password error
+                    }
+                } else {
+                    $error = $emailError;
+                    // email error
+    
                 }
-            } else {
-                $error = $emailError;
-                // email error
-
+            }   else {
+                $error = $usernameError; 
+                // username error
             }
-        }   else {
-            $error = $usernameError; 
-            // username error
         }
     }
     
