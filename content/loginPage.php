@@ -13,7 +13,7 @@
 </head>
 <body>
     <main>
-        <?php include '../functies/samenvoeg-nav.php'?>    
+        <?php include '../functies/samenvoeg-nav-offpage.php'?>    
         <div class="loginContent">
             <div class="loginfoto">
                 <img src="../Img/loginPage-foto.png" alt="coffee-drinking-image">
@@ -49,5 +49,6 @@
             </div>
         </div>
     </main>
+    <?php include '../functies/samenvoeg-footer-offpage.php'?> 
 </body>
 </html>
