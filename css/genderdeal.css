@@ -1,0 +1,57 @@
+:root {
+    --yellow: #EDE5BB;
+    --blue: #00657C;
+    --red: #95261F;
+}
+
+@font-face {
+    font-family: "Circular";
+    src: url(../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url(../fonts/caveat.regular.ttf);
+}
+
+.genderdeal {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: var(--blue);
+    color: var(--yellow);
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.genderdeal-image {
+    width: 100px;
+    height: auto;
+}
+.genderdeal-text {
+    font-size: 2rem;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.genderdeal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.vrouw
+{
+    background-color: var(--red);
+}
