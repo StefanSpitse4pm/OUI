@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 //     "user" => [ "email" => "user@user.com", "password" => "user", "gender" => "man"]
 // ];
 
-include "../html/users.php";
+include "../content/users.php";
 
 function login($username, $email, $password, $users) {
     if (!empty($username) && !empty($email) && !empty($password)) {
