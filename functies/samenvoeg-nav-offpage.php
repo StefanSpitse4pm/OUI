@@ -17,10 +17,10 @@ if (session_status() == PHP_SESSION_NONE) {
         </div>
         <ul class="link">
             <li><a class="nav-link" href="../index.php">Home</a></li>
-            <li><a class="nav-link" href="#aboutus" onclick="scrollToPage('aboutus')">About</a></li>
-            <li><a class="nav-link" href="#menu" onclick="scrollToPage('menu')">Menu</a></li>
-            <li><a class="nav-link" href="#review" onclick="scrollToPage('review')">Reviews</a></li>
-            <li><a class="nav-link" href="#footer" onclick="scrollToPage('footer')">Contact</a></li>
+            <li><a class="nav-link" href="../index.php/#aboutus" onclick="scrollToPage('aboutus')">About</a></li>
+            <li><a class="nav-link" href="../index.php/#menu" onclick="scrollToPage('menu')">Menu</a></li>
+            <li><a class="nav-link" href="../index.php/#review" onclick="scrollToPage('review')">Reviews</a></li>
+            <li><a class="nav-link" href="../index.php/#footer" onclick="scrollToPage('footer')">Contact</a></li>
         </ul>
 
         <?php if (!empty($_SESSION['username'] )): ?>
