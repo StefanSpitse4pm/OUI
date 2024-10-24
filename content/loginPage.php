@@ -16,10 +16,10 @@
         <?php include '../functies/samenvoeg-nav-offpage.php'?>    
         <div class="loginContent">
             <div class="loginfoto">
-                <img src="../Img/loginPage-foto.png" alt="coffee-drinking-image">
+                <img src="../Img/loginPage-foto.png" alt="coffee-drinking-image" class="img">
             </div>
             <div class="login">
-                <img src="../Img/Logo-04.png" alt="">
+                <img src="../Img/Logo-04.png" alt="" class="img">
                 <hr> 
                 <?php
                     if (!empty($failed)) {
