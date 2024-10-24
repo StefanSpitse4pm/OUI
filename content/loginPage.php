@@ -20,7 +20,7 @@
             </div>
             <div class="login">
                 <img src="../Img/Logo-04.png" alt="" class="img">
-                <hr> 
+                <hr class="hrLogin"> 
                 <?php
                     if (!empty($failed)) {
                         echo $failed;
