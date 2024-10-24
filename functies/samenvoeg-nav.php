@@ -32,11 +32,11 @@ if (session_status() == PHP_SESSION_NONE) {
             </ul>
 
             <?php if (!empty($_SESSION['username'] )): ?>
-                <div class="logout_foto_container">
-                    <a href="../functies/logoutfunction.php"><img class="logout-logo" src="../img/logout-logo.svg" alt="logout-logo"></a>
-                </div>
+                
+                <a href="../functies/logoutfunction.php" class="profile-logo"><img class="logout-logo" src="../img/logout-logo.svg" alt="logout-logo" ></a>
+                
             <?php else:?>
-                    <a href="../html/loginPage.php"><img class="login-logo" src="../img/login-logo.svg" alt="login-logo"></a>
+                    <a href="../html/loginPage.php" class="logout-logo-a"><img class="login-logo" src="../img/login-logo.svg" alt="login-logo"></a>
 
             <?php endif;?>
             <hr class="nav_line_bottom">

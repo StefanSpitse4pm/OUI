@@ -114,7 +114,7 @@ li
     text-decoration: none;
 }
 
-a
+.logout-logo-a
 {
     text-decoration: none;
     color: var(--blue);
