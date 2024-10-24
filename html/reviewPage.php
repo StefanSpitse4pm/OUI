@@ -21,22 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klanten Reviews</title>
-    <link rel="stylesheet" href="../css/reviewPage.css" type="text/css">
-</head>
-<body>
-    
+<div class="reviewPage">
     <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
     <main>
         <section class="reviewsSection">
             <div class="reviewCard">
                 <div class="reviewHeader">
-                    <h3>Klanten recensie</h3>
+                    <h3>Klanten review</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
@@ -50,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
             <div class="reviewCard">
                 <div class="reviewHeader">
-                    <h3>Klanten recensie</h3>
+                    <h3>Klanten review</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
@@ -64,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
             <div class="reviewCard">
                 <div class="reviewHeader">
-                    <h3>Klanten recensie</h3>
+                    <h3>Klanten review</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
@@ -79,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
             <div class="reviewCard">
                 <div class="reviewHeader">
-                    <h3>Klanten recensie</h3>
+                    <h3>Klanten review</h3>
                     <div class="rating">★★★★★</div>
                 </div>
                 <hr>
@@ -95,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <div class="reviewButton">
             <a href="https://nl.trustpilot.com/">Lees hier al onze reviews</a>
         </div>
-        <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
+        <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlagMiddle">
         <div class="reviewFormulier">
             <div class="formulierTitle">
                 <h2>Plaats uw eigen review!</h2>
@@ -182,6 +173,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             </form>
         </div>
     </main>
-    <img src="../img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag">
-</body>
-</html>
+</div>

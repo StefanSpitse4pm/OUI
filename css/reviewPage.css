@@ -10,7 +10,7 @@
     src: url('../fonts/CircularStd-Book.otf');
 }
 
-body 
+.reviewPage
 {
     background-color: hsl(50, 58%, 83%);
     width: 100%;
@@ -117,7 +117,7 @@ main {
     display: flex;
     margin-top: 15px;
     font-weight: bold;
-    font-family: 'CircularStd-Book' ;
+    font-family: 'CircularStd-Book';
 }
 
 form
@@ -136,7 +136,7 @@ input, textarea, input[type="submit"]
     max-width: 600px;
     padding: 10px;
     font-size: 16px;
-    font-family: 'CircularStd-Book' ;
+    font-family: 'CircularStd-Book';
 }
 
 form > input[type="submit"]
@@ -145,7 +145,7 @@ form > input[type="submit"]
     min-width: 600px;
     padding: 10px;
     font-size: 20px;
-    font-family: 'CircularStd-Book' ;
+    font-family: 'CircularStd-Book';
     height: 70px;
     margin-top: 15px;
     cursor: pointer;
@@ -176,4 +176,10 @@ form > input[type="submit"]
 {
     width: 100%;
     height: 50px;
+}
+.frankrijkVlagMiddle
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
 }
