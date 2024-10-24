@@ -9,9 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Oui - Login</title>
     <link rel="stylesheet" href="../css/loginPage.css" type="text/css">
+    <link rel="stylesheet" href="../css/frontpage.css" type="text/css">
 </head>
 <body>
     <main>
+        <?php include '../functies/samenvoeg-nav.php'?>    
         <div class="loginContent">
             <div class="loginfoto">
                 <img src="../Img/loginPage-foto.png" alt="coffee-drinking-image">
