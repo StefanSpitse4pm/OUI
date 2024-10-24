@@ -30,14 +30,14 @@ if (session_status() == PHP_SESSION_NONE) {
                 <li><a href="reviewPage.html">Reviews</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
+
             <?php if (!empty($_SESSION['username'] )): ?>
                 <div class="logout_foto_container">
                     <a href="../functies/logoutfunction.php"><img class="logout-logo" src="../img/logout-logo.svg" alt="logout-logo"></a>
                 </div>
             <?php else:?>
-                <div class="Login_foto_container">
                     <a href="../html/loginPage.php"><img class="login-logo" src="../img/login-logo.svg" alt="login-logo"></a>
-                </div>
+
             <?php endif;?>
             <hr class="nav_line_bottom">
         </nav>

@@ -1,3 +1,8 @@
+*
+{
+    box-sizing: border-box;
+}
+
 :root
 {
     --yellow: #EDE5BB;
@@ -9,7 +14,7 @@ body{
     margin: 0;
     width: 100%;
     padding: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -28,7 +33,6 @@ header
     width: 100%;
     height: auto;
     position: relative;
-    overflow: hidden;
 }
 
 .oui_koffie
@@ -48,16 +52,18 @@ header
 
 .login-logo
 {
-    width: 40px;
+    position: absolute;
+    top: 35%;
+    right: 50px;
     height: 40px;  
-    margin-right: 40px; 
 }
 
 .logout-logo
 {
-    width: 40px;
-    height: 40px;
-    margin-right: 40px;
+    position: absolute;
+    top: 35%;
+    right: 50px;
+    height: 40px;  
 }
 
 .page_logo
@@ -108,14 +114,6 @@ li
     text-decoration: none;
 }
 
-.Login_foto_container
-{
-    display: flex;
-    margin-left: 31%;
-    padding: 0;
-    align-items: center;
-}
-
 a
 {
     text-decoration: none;
@@ -164,10 +162,40 @@ nav
     border-radius: 20px;
 }
 
+.socials
+{
+    display: flex;
+    position: absolute;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    gap: 10px;
+    background-color: var(--yellow);
+    border-top: 4px solid var(--blue);
+}
+
+.facebook-foto
+{
+    margin-top: 5%;
+}
+
+.insta-foto
+{
+    margin-top: 5%;
+}
+
+.twitter-foto
+{
+    margin-top: 5%;
+}
+
+
 .homepage_box
 {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin-top: 90px;
     position: relative;
     display: inline-block;
@@ -175,18 +203,16 @@ nav
 
 .homepage_foto
 {
-    display: block;
-    width: 100%;
-    height: auto;
+    height: auto
 }
 
 .homepage_content
 {
+    width: 550px;
+    height: auto;
     position: absolute;
     top: 130px;
     left: 100px;
-    width: 550px;
-    height: auto;
     background-color: var(--yellow);
     color: black;
     padding: 10px 20px; 

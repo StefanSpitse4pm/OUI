@@ -40,5 +40,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
             </div>
     </div>
+    <?php include '../functies/samenvoeg-footer.php'?> 
 </body>
 </html>
