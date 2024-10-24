@@ -16,7 +16,7 @@
 
 .footer
 {
-    height: 400px;
+    width: 100%;
     display: grid;
     background-image: url(../Img/pexels-chevanon-photography-333523.jpg);
     background-repeat: no-repeat;
@@ -29,23 +29,21 @@
 body
 {
     margin: 0;
-    background-color: var(--yellow);
 }
 
-.frenchflag
+.franseVlag
 {
-    display: grid;
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
+    width: 100%;
+    height: 50px;
+    display: block;
+
 }
 
 .container
 {
-    display: grid;
-    grid-row: 2;
-    grid-column: 1 / 4;
-    grid-template-rows: 50px 350px;
-    grid-template-columns: 1fr 1fr 1fr
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
 }
 
 .map
@@ -79,10 +77,10 @@ body
 
 .contactbox
 {
-
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    width: 420px;
-    height: 240px;
+    width: 100%;
     background-color: var(--yellow);
     outline-style: solid;
     outline-width: 5px;
@@ -90,18 +88,22 @@ body
     border-radius: 10px;
     font-family: "Circular";
     color: var(--blue);
+    padding: 20px 40px;
 }
 
 .contactbox > h1
 {
     font-weight: normal;
-    margin: 10px;
 }
 
-.contactbox > p
+.contactbox > h2
 {
     font-size: 24px;
-    margin: 10px
+}
+
+.contactbox > h2, p
+{
+    margin: 0;
 }
 
 .openingstijden

@@ -17,14 +17,12 @@
 * {
     box-sizing: border-box;
 }
-body
+
+.scherm
 {
-    margin: 0;
-    background-color: var(--yellow);
-    height: 200vh;
+    height: 100vh;
+    background-color: wheat;
 }
-
-
 .franseVlag
 {
     width: 100%;
@@ -34,6 +32,7 @@ body
 
 .laCarte
 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,9 +49,9 @@ body
     margin: 0;
 }
 
-a img
+.lacarteImages > img
 {
-    width: 100px;
+    width: 130px;
     position: absolute;
 }
 
@@ -108,7 +107,7 @@ a img
 {
     width: 100px;
     left: 70%;
-    bottom: 30%;  
+    bottom: 50%;  
 }
 
 .thee1
@@ -145,6 +144,6 @@ a img
 
 .merengue2
 {
-    left: 20%;
-    bottom: 50%; 
+    right: 10%;
+    top: 20%; 
 }

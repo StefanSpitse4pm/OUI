@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 $users = [
-    "user" => [ "email" => "user@user.com", "password" => "user"]
+    "user" => [ "email" => "user@user.com", "password" => "user", "gender" => "man"]
 ];
 
 function login($username, $email, $password, $users) {
@@ -12,10 +12,13 @@ function login($username, $email, $password, $users) {
         $username = filter_input(INPUT_POST, "username");
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
         $password = filter_input(INPUT_POST, "password");
+        $gender = $users["user"]["gender"];
+        
 
         if (!empty($users[$username]) && $users[$username]['password'] === $password) {
             if ($users[$username]['email'] === $email) {
                 $_SESSION['username'] = $username;
+                $_SESSION['gender'] = $gender;
                 header("Location: ../html/Frontpage.php");
                 exit();
             } else {
