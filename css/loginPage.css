@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 140vh;
     position: relative;
     background-image: url('../Img/pexels-chevanon-photography-333523.jpg');
     background-size: cover;
@@ -43,7 +43,7 @@ main {
     background-color: var(--yellow);
     border-radius: 15px;
     color: var(--blue);
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
