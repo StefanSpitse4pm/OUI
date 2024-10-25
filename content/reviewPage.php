@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 <div class="reviewPage">
     <img src="img/frenchflag.png" alt="frankrijkVlag" class="frankrijkVlag" id="review">
-    <div class="main-review">
+    <div class="mainReview">
         <section class="reviewsSection">
             <div class="reviewCard">
                 <div class="reviewHeader">
@@ -132,7 +132,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     <label for="star1" title="1 ster">&#9733;</label>
                 </div>
 
-                <input type="submit" value="Review Versturen">
+                <div class="submitReview">
+                    <input type="submit" value="Review Versturen">
+                </div>
                 <?php
                     if($_SERVER["REQUEST_METHOD"] == "POST")   
                         // Controle voornaam

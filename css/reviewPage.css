@@ -17,7 +17,8 @@
     margin: 0;
 }
 
-.main-review {
+.mainReview 
+{
     width: 100%;
 }
 
@@ -123,7 +124,7 @@
     font-family: 'CircularStd-Book';
 }
 
-form
+.userReviewSection > form
 {
     display: flex;
     align-items: center;
@@ -133,7 +134,7 @@ form
 
 }
 
-input, textarea, input[type="submit"]
+.userReviewSection > input, textarea
 {
     width: 100%;
     max-width: 600px;
@@ -142,7 +143,7 @@ input, textarea, input[type="submit"]
     font-family: 'CircularStd-Book';
 }
 
-form > input[type="submit"]
+.submitReview > input[type="submit"]
 {
     width: 600px;
     min-width: 600px;

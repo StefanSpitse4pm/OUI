@@ -17,6 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <link rel="stylesheet" href="css/laCarte.css"  type="text/css">
     <link rel="stylesheet" href="css/reviewPage.css"  type="text/css">
     <link rel="stylesheet" href="css/footer.css"  type="text/css">
+    <link rel="stylesheet" href="css/genderdeal.css"  type="text/css">
     
 </head>
     
