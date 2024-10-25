@@ -29,5 +29,11 @@
     'password' => 'Lb061013@',
     'gender' => 'vrouw',
   ),
+  'vrouw' => 
+  array (
+    'email' => 'vrouw@gmail.com',
+    'password' => 'Lb061013@',
+    'gender' => 'vrouw',
+  ),
 );
 ?>
