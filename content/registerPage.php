@@ -29,7 +29,9 @@
                             $password = $_POST['password'];
                             $email = $_POST['email'];
                             $gender = $_POST['gender'];
-                        
+                            
+
+                            include '../content/users.php';
                             // Add the new user to the $users array
                             $users[$username] = [
                                 "email" => $email,
@@ -38,7 +40,8 @@
                             ];
                         
                             // Save the updated $users array back to the PHP file
-                            file_put_contents('users.php', '<?php $users = ' . var_export($users, true) . ';');
+                            file_put_contents('users.php', '<?php $users = ' . var_export($users, true) . ';' . PHP_EOL . '?>');
+                            file_put_contents('users-offpage.php', '<?php $users = ' . var_export($users, true) . ';' . PHP_EOL . '?>');
                             header("Location: loginPage.php");
                     } else {
                         $error = "<h2>The terms of service is required</h2>";

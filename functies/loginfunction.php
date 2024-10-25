@@ -3,18 +3,15 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-// $users = [
-//     "user" => [ "email" => "user@user.com", "password" => "user", "gender" => "man"]
-// ];
 
-include "../content/users.php";
-
+require "../content/users-offpage.php";
 function login($username, $email, $password, $users) {
     if (!empty($username) && !empty($email) && !empty($password)) {
+        
         $username = filter_input(INPUT_POST, "username");
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
         $password = filter_input(INPUT_POST, "password");
-        $gender = $users["user"]["gender"];
+        $gender = $users[$username]["gender"];
         
 
         if (!empty($users[$username]) && $users[$username]['password'] === $password) {
@@ -34,7 +31,7 @@ function login($username, $email, $password, $users) {
     }
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && basename($_SERVER['PHP_SELF']) == 'loginPage.php')  {
     $failed = login($_POST['username'], $_POST['email'], $_POST['password'], $users);
 }
 ?>

@@ -38,6 +38,6 @@ if (session_status() == PHP_SESSION_NONE) {
 <script>
     function scrollToPage(id) {
     const element = document.getElementById(id);
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView();
     }
 </script>
