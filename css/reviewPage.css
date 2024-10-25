@@ -134,7 +134,7 @@
 
 }
 
-.userReviewSection > input, textarea
+.userReviewSection > form > input, textarea
 {
     width: 100%;
     max-width: 600px;
