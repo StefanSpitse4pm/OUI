@@ -86,7 +86,6 @@
 
 .reviewCard:hover
 {   
-    /* transform: translateY(-5px); */
     box-shadow: 0 6px 15px hsla(0, 0%, 0%, 0.15);
 }
 
@@ -131,7 +130,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%
-
 }
 
 .userReviewSection > input, textarea
