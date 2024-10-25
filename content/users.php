@@ -17,4 +17,11 @@
     'password' => 'WACHTWOORD!w1',
     'gender' => 'man',
   ),
+  'klootzak' => 
+  array (
+    'email' => 'pipo@hotmail.com',
+    'password' => 'Hh12345678@',
+    'gender' => 'None',
+  ),
 );
+?>
