@@ -12,13 +12,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     // Foutmelding array
     if (!empty($email)) 
     {
+        $filePath = 'Reviews/form_data.csv';
 
+    $isNewFile = !file_exists($filePath);
+
+    $file = fopen($filePath, 'a');
+
+    if ($isNewFile) {
+        fputcsv($file, ['Email', 'Name', 'Last Name', 'Review', 'Rating']);
+    }
+
+    fputcsv($file, [$email, $name, $lastName, $review, $rating]);
+
+    fclose($file);
+    }
     }
     else 
     {
         "Fout: U moet een geldig e-mailadres invullen.";
     }
-}
 ?>
 
 <div class="reviewPage">
