@@ -102,7 +102,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-hr {
+.hrLogin {
     border: 1px solid var(--blue);
     margin-bottom: 20px;
     width: 100%;
@@ -199,6 +199,31 @@ select {
 .registerlink
 {
     font-size: 1.2rem;
+}
+
+.oui_logo
+{
+    width: 75px;
+    height: 65px;
+    position: absolute;
+    top: 30px;
+    left: 82px;
+}
+
+.login-logo
+{
+    position: absolute;
+    top: 35%;
+    right: 3%;
+    height: 40px;  
+}
+
+.logout-logo
+{
+    position: absolute;
+    top: 35%;
+    right: 3%;
+    height: 40px;  
 }
 
 @media (max-width: 500px) {
