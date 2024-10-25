@@ -4,8 +4,8 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 ?>
 
-    <?php include 'functies/samenvoeg-nav.php'?> 
-    <?php include 'functies/genderdeal.php'?>
+<?php include 'functies/samenvoeg-nav.php'?> 
+    
 
 <div class="homepage_box">
         <div class="homepage_content">

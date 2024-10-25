@@ -23,11 +23,4 @@
     'password' => 'Hh12345678@',
     'gender' => 'None',
   ),
-  'moidepoi' => 
-  array (
-    'email' => 'moidepoi@gmail.com',
-    'password' => 'Lb061013@',
-    'gender' => 'vrouw',
-  ),
 );
-?>

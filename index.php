@@ -22,6 +22,7 @@ if (session_status() == PHP_SESSION_NONE) {
 </head>
     
 <body>
+    <?php include 'functies/genderdeal.php'?>   
     <?php include "content/Frontpage.php" ?>
     <?php include "content/Aboutus.html" ?>
     <?php include "content/laCarte.html" ?>

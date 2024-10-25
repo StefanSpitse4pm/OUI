@@ -15,7 +15,7 @@
 }
 
 .genderdeal {
-    position: absolute;
+    position: fixed;
     width: 90%;
     display: flex;
     align-items: center;
@@ -25,16 +25,17 @@
     margin: 0 auto;
     background-color: var(--blue);
     color: var(--yellow);
-    top: 20%;
+    top: 13%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 100;
+    z-index: 9;
 }
 .genderdeal-image {
     width: 100px;
     height: auto;
 }
 .genderdeal-text {
+    font-family: "Circular";
     font-size: 2rem;
     flex-grow: 1;
     text-align: center;

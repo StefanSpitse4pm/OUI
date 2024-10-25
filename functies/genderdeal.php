@@ -2,11 +2,10 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require "content/users.php";
-$gender = $users['moi']['gender'];
-$_SESSION['gender'] = $gender;
+if (!empty($_SESSION['username'] )) {
+    require "content/users.php";
+}
 ?>
-
 <?php if ($_SESSION['gender'] == 'man'): ?>
     <div class="genderdeal">
         <img src="Img/Logo-yellow.png" alt="logo" class="genderdeal-image">

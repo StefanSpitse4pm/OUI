@@ -3,7 +3,6 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 ?>
-
 <header>
     <nav>
         <hr class="nav_line_top">
